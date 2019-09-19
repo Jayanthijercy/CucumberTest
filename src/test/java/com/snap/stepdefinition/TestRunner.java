@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"src/test/resources/Features"}, glue= {"com.snap.stepdefinition"})
+@CucumberOptions(features= {"src/test/resources/Features"}, glue= {"com.snap.stepdefinition"}, plugin="json:target/report.json")
 public class TestRunner {
 
 }
